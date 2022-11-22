@@ -1,13 +1,14 @@
 pragma solidity ^0.8.10;
 
 import "ds-test/test.sol";
-import "forge-std/Vm.sol";
+import "forge-std/Test.sol";
+// import "./utils/vm.sol";
 
-import "../levels/01-Fallback/FallbackFactory.sol";
-import "../core/Ethernaut.sol";
+import "../Fallback/FallbackFactory.sol";
+import "../Ethernaut.sol";
 
 contract FallbackTest is DSTest {
-    Vm vm = Vm(address(HEVM_ADDRESS));
+    // Vm vm = Vm(address(HEVM_ADDRESS));
     Ethernaut ethernaut;
     address eoaAddress = address(1337);
 
